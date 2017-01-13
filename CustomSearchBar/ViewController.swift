@@ -83,8 +83,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         customSearchController.customSearchBar.placeholder = "Search in this awesome bar..."
         tblSearchResults.tableHeaderView = customSearchController.customSearchBar
-        
+        customSearchController.searchBar.keyboardAppearance = .dark
         customSearchController.customDelegate = self
+        
+        //addKeyboardButton()
+        
+        //customSearchController.definesPresentationContext = true
+        //customSearchController.isActive = true
+        //customSearchController.searchBar.becomeFirstResponder()
     }
     
     func addKeyboardButton() {
